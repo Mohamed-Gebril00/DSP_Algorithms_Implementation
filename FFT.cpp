@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef complex<double> point;
+typedef complex<double> sample;
 
 #define x real()
 #define y imag()
@@ -16,13 +16,13 @@ typedef complex<double> point;
 const double PI= acos(-1.0);
 const double EPS=1e-7;
 
-point j (0,-1); // (0-1j)
+sample j (0,-1); // (0-1j)
 
-void FFT(point samples[],int SIZE)
+void FFT(sample samples[],int SIZE)
 {
     if(SIZE == 2)
     {
-        point temp;
+        sample temp;
         temp=samples[0];
         samples[0]=temp+samples[1];
         samples[1]=temp-samples[1];
@@ -30,9 +30,9 @@ void FFT(point samples[],int SIZE)
     }
 
     int half_size=SIZE/2;
-    point samples_half_even[half_size];
-    point samples_half_odd[half_size];
-    point Diagonal[half_size];
+    sample samples_half_even[half_size];
+    sample samples_half_odd[half_size];
+    sample Diagonal[half_size];
 
     /// even sequence
     for(int i=0,idx=0 ; i< SIZE ;i+=2,idx++)
@@ -67,8 +67,8 @@ int main()
 {
     cout << setprecision(4);
     cout << fixed;
-    point j (0,-1);
-    point user_input[100000];
+    sample j (0,-1);
+    sample user_input[110000];
     int n;
 	cout <<"Please enter number of samples must be power of 2: ";
     cin >> n;

@@ -73,7 +73,7 @@ int main()
 	cout <<"Please enter number of samples must be power of 2: ";
     cin >> n;
 	cout << "Enter samples. in form of complex data (real,imag) e.g(5,3) = 5+3i," << endl;
-	cout <<"or i form of real data only e.g. 5 = 5+0i" << endl;
+	cout <<"or in form of real data only e.g. 5 = 5+0i" << endl;
     for(int i=0;i<n;i++)
     {
         cin >> user_input[i];

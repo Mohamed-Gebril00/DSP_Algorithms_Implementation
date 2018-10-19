@@ -1,3 +1,9 @@
+/// DSP Algorithms Implementation.
+/// Implemented By Mohamed Ahmed Gebril
+/// Faculty of engineering Alexandria university
+/// Communication Department
+/// 16/10/2018
+
 #ifndef DSP_TOOLBOX_H
 #define DSP_TOOLBOX_H
 

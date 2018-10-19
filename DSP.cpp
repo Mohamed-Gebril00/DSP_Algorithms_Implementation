@@ -1,3 +1,9 @@
+/// DSP Algorithms Implementation.
+/// Implemented By Mohamed Ahmed Gebril
+/// Faculty of engineering Alexandria university
+/// Communication Department
+/// 16/10/2018
+
 #include "./DSP_ToolBox/DSP.h"
 
 const double PI = acos(-1.0);

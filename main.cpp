@@ -21,7 +21,7 @@ int main()
     {
         cin >> Input_Samples[Loop_Idx];
     }
-    FFT(Input_Samples, Input_Size);
+    DCT(Input_Samples, Input_Size);
     for(Loop_Idx=0;Loop_Idx<Input_Size;Loop_Idx++)
     {
         cout << Input_Samples[Loop_Idx] << endl;
